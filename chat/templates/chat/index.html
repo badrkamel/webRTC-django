@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Django with webRTC</title>
+    </head>
+    <body>
+        <div>
+            <h3 id="lbl-username">username</h3>
+            <div><input id="username"><button id="btn-join">Join Room</button></div>
+        </div>
+
+        <div class="main-gird-container">
+
+            <div id="video-container">
+                <div><video id="local-video" style="float: left;" autoplay playsinline></video></div>
+                <button id="btn-toggle-audio">Audio mute</button>
+                <button id="btn-toggle-audio">Video off</button>
+            </div>
+
+            <div id="chat">
+                <h3>Chat</h3>
+                <div id="messages">
+                    <ul id="message-list"></ul>
+                </div>                
+                <div><input id="msg"><button id="btn-send-msg">Send Message</button></div>
+                <button id="btn-share-screen">Share Screen</button>
+            </div>
+        </div>
+
+    </body>
+</html>
