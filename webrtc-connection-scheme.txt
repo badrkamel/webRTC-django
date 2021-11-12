@@ -1,0 +1,9 @@
+Session Discription Protocol (SDP): Information about a peer that the other peer needs in order to make p2p connection.
+
+Signalling (using django server) required to exchange SDPs.
+
+Both peers connect to signalling server using (websocket, api, whatsapp or whatever).
+
+After SDPs are exchanged from both sides, p2p connection can be established.
+
+Signalling (Django) server not required afterwards.
